@@ -29,36 +29,17 @@ xhr.addEventListener("load", ()=>{
 const root = document.getElementById("root");
 const ul = document.createElement("ul");
 daejeon.forEach((ggumdol) => {
-  const li
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
+  const li = document.createElement("li");
+  li.textContent = daejeon.name;
+  ul.appendchild(li);
+});
+root.appendchild(ul);
   }
+});
+xhr.send();
+};
 
-})
-
-}
-
-
-
-
-
-
-
-
-
+daejeonAJAX();
 
 </script>
 
